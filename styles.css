@@ -1,19 +1,174 @@
 /* Landing page */
 * {
-  margin: 20px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 16px;
+}
 
-  /* landing */
-  h1{
-    font-weight: 800;
-    font-size: 10vw;
-    letter-spacing: -3px;
-  }
+.pagebreak-container {
+  background-color: rgb(45, 44, 44);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+  padding-left: 40px;
+}
 
-  #landing{
-     background-color: rgb(96, 92, 92); 
-     width: 100vh;
+h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 10vw;
+  letter-spacing: -3px;
+}
+h2 {
+  color: antiquewhite;
+  font-family: "Fjalla One", sans-serif;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+#sidebar {
+  background-color: rgba(39, 39, 39, 0.7);
+  background-color: #1c1c1c;
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+}
+#main {
+  margin-left: 15%;
+}
+a {
+  color: black;
+}
+.offcanvas {
+  width: 100%;
+  margin-left: 15%;
+  height: 100vh;
+  background-color: #1c1c1c;
+  z-index: 2000;
+}
+
+a.nav-link {
+  color: white;
+  font-size: 30px;
+  font-size: 50px;
+  display: inline-block;
+  font-weight: 800;
+}
+
+a.nav-link:hover {
+  color: #75dab4;
+}
+
+small {
+  color: gray;
+}
+
+section {
+  min-height: 30vh;
+}
+.section-title {
+  bottom: 0;
+}
+
+/* ABOUT */
+.skill {
+  width: 80%;
+  margin: 60px auto;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skill li {
+  margin: 20px 0;
+  padding: 10px;
+  list-style: none;
+}
+
+.bar {
+  background: #93b6c8;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(
+    35deg,
+    rgb(205, 244, 244) 0%,
+    rgba(198, 216, 255, 1) 100%
+  );
+}
+
+.html {
+  width: 90%;
+  animation: html 3s;
+  animation-iteration-count: infinite;
+}
+
+.css {
+  width: 85%;
+  animation: css 3s;
+  animation-iteration-count: infinite;
+}
+
+.bootstrap {
+  width: 90%;
+  animation: bootstrap 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
   }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+/* contact */
+
+.about h3 {
+  font-family: "Fjalla One", sans-serif;
+  margin-bottom: 80px;
+  line-height: 1.4;
+  font-size: 4vw;
+  letter-spacing: 2px;
+}

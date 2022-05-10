@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CarlaCodes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e67a0b83aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,71 +21,109 @@
   </head>
 
   <body bg-dark>
+    <!-- sidebar -->
+    <nav id="sidebar">
+        <div class="navbar container-fluid d-flex flex-column justify-content-around" style="height: 100vh;">
+            <a class="navbar-brand" href="#home">CarlaCodes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasnavbar">
+            <span ><i class="bi bi-list"></i></span>
+            </button>
+            <button class="btn btn-outline-dark">HIT ME UP</button>
+        </div>
+        <div class="offcanvas" tabindex="-1" id="offcanvasnavbar">
+            <div class="container-fluid">
+                <button type="button" class="btn-outline-dark btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                <div class="offcanvas-content">
+                    <ul class="navbar-nav d-flex justify-content-evenly flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#landing">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item-box d-flex flex-column">
+                                <a class="nav-link" href="#about"  data-bs-dismiss="offcanvas" data-bs-target="#offcanvasnavbar">ABOUT</a>
+                                <span><small>GET TO KNOW ME</small><span>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                             <div class="nav-item-box d-flex flex-column">
+                                <a class="nav-link" href="#resume"  data-bs-dismiss="offcanvas" data-bs-target="#offcanvasnavbar">RESUME</a>
+                                <span><small>EDUCATION & WORK EXPERIENCE</small></span>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                             <div class="nav-item-box d-flex flex-column">
+                                <a class="nav-link" href="#projects"  data-bs-dismiss="offcanvas" data-bs-target="#offcanvasnavbar">PROJECTS</a>
+                                <span><small>SOME MAGIC</small></span>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                             <div class="nav-item-box d-flex flex-column">
+                                <a class="nav-link" href="#contact"  data-bs-dismiss="offcanvas" data-bs-target="#offcanvasnavbar">CONTACT</a>
+                                <span><small>SAY HELLO</small></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+    </nav>
 
     <!-- landing -->
+    <main id="main">
     <section id="landing" class="landing">
-      <div class="container-fluid bg-dark text-white">
-        <h1 class="text-white">CARLA AMY LAWRENCE</h1>
-        <h3>NEED A WEB DEVELOPER?</h3>
+      <div class="container-fluid bg-dark text-white" style="height: 100vh;">
+        <div class="section-title d-flex flex-column flex-end">
+            <h1>CARLA AMY LAWRENCE</h1>
+            <h3>NEED A WEB DEVELOPER?</h3>
+        </div>
       </div>
     </section>
 
     <!-- about -->
     <section id="about" class="">
-        <div class="about heading container">
-            <h2>ABOUT</h2>
-            <h4>ASPIRING WEB DEVELOPER</h4>
+        <div class="pagebreak-container" style="height: 80vh;">
+            <div class="section-title">
+                <h1>ABOUT</h1>
+                <h4>ASPIRING WEB DEVELOPER</h4>
+            </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row d-flex flex-wrap pt-3">
               <div class="col-lg-4">
-                 <img src="" alt=""> 
+                 <img src="./images/Carlablack.jpg" class="img-fluid about-img" alt="intropic"> 
               </div>
-              <div class="col-lg-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore accusantium asperiores fuga. Eum et porro soluta necessitatibus assumenda impedit eaque facilis. Ea debitis, reiciendis vero esse numquam doloremque, mollitia explicabo laboriosam delectus deserunt, iste autem! Amet ullam expedita minima exercitationem temporibus soluta harum eaque.</p>
-              </div>
-            </div>
-            <div class="row">
-                <div class="about-details">
-                  <div class="col-lg-2 col-md-4"><i class=""><p>PHONE</p><p>0767194703</p></i></div>
-                  <div class="col-lg-2 col-md-4"><i class=""><p>PHONE</p><p>0767194703</p></i></div>
-                  <div class="col-lg-2 col-md-4"><i class=""><p>PHONE</p><p>0767194703</p></i></div>
-                  <div class="col-lg-2 col-md-4"><i class=""><p>PHONE</p><p>0767194703</p></i></div>
-                  <div class="col-lg-2 col-md-4"><i class=""><p>PHONE</p><p>0767194703</p></i></div>
-                  <div class="col-lg-2 col-md-4"><i class=""><p>PHONE</p><p>0767194703</p></i></div>
+              <div class="col-lg-6 text-center pt-2">
+                <p>I am Carla and I am on a path of becoming the best full stack developer. I thorougly enjoy web development as I can best express mycreativity</p>
+                <p>I have recently graduated with my BSc in Biotechnology and decided to dive into tech and I have not looked back ever since. When not behind a computer you can find me outdoors hiking and stand-up paddling or in the gym powerlifting.</p>
                 </div>
+            </div>
+            <div class="about-details row d-flex flex-wrap text-center pt-3">
+                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-telephone"></i><p>PHONE</p><p>0767194703</p></div>
+                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-envelope"></i><p>EMAIL</p><p style="word-break: break-all;">carlaamylawrence@gmail.com</p></div>
+                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-mortarboard-fill"></i><p>DEGREE</p><p>BSc</p></div>
+                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-geo-fill"></i><p>LOCATION</p><p>Cape Town</p></div>
+                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-building"></i><p>FREELANCE</p><p>Available</p></div>
+                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-calendar-date"></i><p>AGE</p><p>23 Years old</p></div>
+
             </div>
         </div>
         <div class="container">
-            <div id="skillsindicator" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#skillsindicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#skillsindicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#skillsindicator" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    </div>
-                    <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#skillsindicator" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#skillsindicator" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div class="skill">
+                <li><h5>HTML</h5>
+                <span class="bar"><span class="html"></span>
+                </li>
+                <li><h5>CSS</h5>
+                <span class="bar"><span class="css"></span>
+                </li>
+                <li><h5>BOOTSTRAP</h5>
+                <span class="bar"><span class="bootstrap"></span>
+                </li>
             </div>
             <div class="container">
                 <div class="row d-flex justify-content-between flex-wrap">
-                    <div class="section-title">
+                    <div class="powers">
                         <h3>THE THINGS I CAN DO</h3>
                     </div>
                     <div class="col-lg-4 ">
@@ -109,49 +153,79 @@
     </section>
     <!-- resume -->
     <section id="resume" class="resume">
-      <div class="container">
-        <h2>RESUME</h2>
-        <h4>DITCHED BACTERIA FOR BUGS</h4>
-        <div class="row d-flex flex-wrap">
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6"></div>
+      <div class="pagebreak-container container-fluid" style="height: 80vh;">
+        <div class="section-title">
+            <h1>RESUME</h1>
+            <h4>DITCHED BACTERIA FOR BUGS</h4>
         </div>
-        <div class="row d-flex flex-wrap">
-            <div class="col-lg-8">
-                <div id="testimonial-indactors" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#testimonial-indactors" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#testimonial-indactors" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#testimonial-indactors" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+        <div class="container">
+            <div class="row d-flex flex-wrap">
+                <div class="col-lg-6 offset-md-3">
+                    <div class="resume-item pb-0">
+                        <ul class="timeline">
+                            <li>
+                            <h4 class="resume-title">FULLSTACK DEVELOPER INTERN</h4>
+                            <h5>Life Choices Academy</h5>
+                            <p>March 2022-September 2022</p>
+                            <p>Learnt Front-end styling frameworks and minupulations</p>
+                            <p>Learnt Back-end programming languages</p>
+                            <p>Built projects</p>
+                            </li>
+                        </ul>
                     </div>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                </div>
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6 offset-md-3">
+            <div class="resume-item pb-0">
+              <ul class="timeline">
+                <li>
+                  <h4 class="resume-title">BSc BIOTECHNOLOGY GRADUATE</h4>
+                  <h5>The University of the Western Cape</h5>
+                  <p>Feb 2017-November 2021</p>
+                  <p>Biochemistry, Microbiology and Bioinformatics</p>
+                  <p>Mathematics and Statistics</p>
+                  <p>Plant, food and Industrical Biotechnology.</p>
+                </li>
+              </ul>
+          </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <div class="row d-flex flex-wrap">
+                <div class="col-lg-8">
+                    <div id="testimonial-indactors" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonial-indactors" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonial-indactors" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonial-indactors" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="..." class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -165,19 +239,45 @@
 
     <!-- projects -->
     <section id="projects" class="projects">
-      <div class="container">
-        <h2>PROJECTS</h2>
-        <h4>PREVIOUS WORK THAT I AM PROUD OF</h4>
+      <div class="pagebreak-container" style="height: 80vh;">
+        <div class="section-title">
+            <h1>PROJECTS</h1>
+            <h4>PREVIOUS WORK THAT I AM PROUD OF</h4>
+        </div>
       </div>
       <div class="container">
-          <div class="row">
+          <div class="row d-flex flex-wrap">
               <div class="col-lg-4">
                   <div class="project-card">
-                      <img src="" alt="">
-                      
-
+                      <img src="./images/resturantsnip.PNG" alt="resturantwebpage" style="width: 350px; height: 200px;">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eaque beatae explicabo enim, facilis optio saepe ea.</p>
+                  </div>
+                  <div class="button-links">
+                      <a href="https://mytakeondelicious.netlify.app" target="_blank"><button type="button" class="btn btn-outline-dark">Live Webpage</button></a>
+                      <a href="https://github.com/Carlaamylawrence/Resturant.git" target="_blank"><button type="button" class="btn btn-outline-dark">Github</button></a>
                   </div>
                 </div>
+                <div class="col-lg-4">
+                  <div class="project-card">
+                      <img src="./images/gymsnap.PNG" class="img-fluid" alt="gymwebpage" style="width: 350px; height: 200px;">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eaque beatae explicabo enim, facilis optio saepe ea.</p>
+                  </div>
+                  <div class="button-links">
+                      <a href="https://hugegym.netlify.app" target="_blank"><button type="button" class="btn btn-outline-dark">Live Webpage</button></a>
+                      <a href="https://github.com/Carlaamylawrence/gym.git" target="_blank"><button type="button" class="btn btn-outline-dark">Github</button></a>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="project-card">
+                      <img src="" alt="">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eaque beatae explicabo enim, facilis optio saepe ea.</p>
+                  </div>
+                  <div class="button-links">
+                      <button type="button" class="btn btn-outline-dark">Live Webpage</button>
+                      <button type="button" class="btn btn-outline-dark">Github</button>
+                  </div>
+                </div>
+                
 
           </div>
       </div>
@@ -185,25 +285,90 @@
 
     <!-- contact -->
     <section id="contact" class="">
-      <div class="container">
-        <h2>CONTACT</h2>
-        <h4>COLLAB? CONNECT? CHAT?</h4>
+      <div class="pagebreak-container" style="height: 80vh;">
+            <div class="section-title">
+                <h1>CONTACT</h1>
+                <h4>COLLAB? CONNECT? CHAT?</h4>
+            </div>
       </div>
+      <div class="contact container pb-3">
+            <div class="row d-flex flex-wrap justify-content-between ">
+                <div class="col-lg-6">
+                    <h3>SAY HELLO</h3>
+                </div>
+                <div class="col-lg-3">
+                    <h5>LOCATION</h5>
+                    <p>Cape Town, South AFrica</p>
+                </div>
+                <div class="col-lg-3">
+                    <h5>REACH ME</h5>
+                    <p>076 719 4703</p>
+                </div>
+            </div>
+            <div class="row d-flex flex-wrap">
+                <div class="col-lg-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26466.67435590388!2d18.453872446775385!3d-33.98394620995498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc42c52081a7cb%3A0x79fbdc90a0e82eac!2sClaremont%2C%20Cape%20Town%2C%207708!5e0!3m2!1sen!2sza!4v1652185087093!5m2!1sen!2sza"  style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-7 p-3">
+                    <div class="form ">
+                        <form action="https://formspree.io/f/xyyolkwj" method="POST">
+                        <div class="form-floating mb-3">
+                        <input type="fullName" class="form-control" id="floatingName" placeholder="Full Name">
+                            <label for="floatingName">Full Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="floatingTel" placeholder="Number">
+                            <label for="floatingPassword">Contact Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-outline-dark">Send</button>
+                    </div>
+            </div>
+        </div>
     </section>
 
     <!-- footer -->
-    <footer id="footer" class="">
-      <div class="container"></div>
+    <footer id="footer" class="bg-dark text-light pb-3">
+        <div class="container-fluid">
+          <h3>LET'S TALK ABOUT YOUR PROJECT</h3>
+          <h4>COLLAB? CONNECT? CREATE?</h4>
+          <a href="#contact"><button type="button" class="btn btn-outline-light">GET IN TOUCH</button></a>
+          <hr style="width:100%", size="3", color=black>
+          <div class="bottom-footer">
+              <div class="d-flex justify-content-between">
+                    <div class="copyright">
+                        <small>© 2022 Copyright</small>
+                    </div>
+                    <div class="social-footer-icons">
+                        <a href="https://www.linkedin.com/in/carla-amy-lawrence-807277225/" target="_blank" i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Carlaamylawrence" target="_blank" i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="design">
+                        <small>Designed by Carla Amy Lawrence</small>
+                    </div>
+                </div>
+          </div>
+         </div>
     </footer>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script 
-    toggleNav() {
-    document.getElementById("navbar").classList.toggle("active"); }
-    </script></script>
+    <script>
+        function toggleNav() {
+            document.getElementById("navbar").classList.toggle("active"); }
+
+    </script>
   </body>
 </html>
