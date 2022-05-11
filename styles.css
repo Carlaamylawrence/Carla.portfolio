@@ -6,7 +6,22 @@
   scroll-behavior: smooth;
   font-size: 16px;
 }
+#landing {
+  background: linear-gradient(
+      0deg,
+      rgba(33, 33, 33, 0.167),
+      rgba(20, 20, 20, 0.3)
+    ),
+    url("./images/landingpic.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
+.landing-section-title {
+  display: flex;
+  flex-direction: column;
+}
 .pagebreak-container {
   background-color: rgb(45, 44, 44);
   display: flex;
@@ -33,6 +48,38 @@ h4 {
   font-size: 22px;
   font-weight: 300;
   letter-spacing: -0.5px;
+}
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  background: #303030;
+  color: white;
+}
+
+main {
+  margin-left: 15%;
+}
+
+.nav-links {
+  position: fixed;
+  top: -100%;
+  left: 15%;
+  right: 0;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.3s linear;
+}
+
+.nav-links.active {
+  top: 0;
+  z-index: 10000;
 }
 
 #sidebar {
@@ -73,10 +120,11 @@ small {
 }
 
 section {
-  min-height: 30vh;
+  min-height: 40vh;
 }
 .section-title {
   bottom: 0;
+  padding-bottom: 45px;
 }
 
 /* ABOUT */
@@ -163,7 +211,64 @@ section {
   }
 }
 
-/* contact */
+/* testimonials */
+.carousel-inner {
+  width: 360px;
+  height: 500px;
+}
+.carousel-item {
+  background-color: #75dab4;
+  width: 360px;
+  height: 500px;
+}
+
+.carousel-indicators {
+  padding-bottom: 60px;
+}
+
+/* resume */
+/* .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #34b7a7;
+} */
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 10;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
 
 .about h3 {
   font-family: "Fjalla One", sans-serif;
@@ -171,4 +276,65 @@ section {
   line-height: 1.4;
   font-size: 4vw;
   letter-spacing: 2px;
+}
+
+/* projects */
+.things-container {
+  background-color: rgb(45, 44, 44);
+}
+.card-container {
+  perspective: 900px;
+  margin-right: 20px;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  color: rgb(39, 39, 39);
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+    0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  backface-visibility: hidden;
+}
+.things {
+  color: #93b6c8;
+  font-size: 30px;
+}
+.front h4 {
+  color: #75dab4;
+}
+.front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+  background: #161619;
+}
+
+.back {
+  transform: rotateY(180deg);
 }
