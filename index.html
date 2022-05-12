@@ -22,14 +22,22 @@
 
   <body bg-dark>
     <!-- sidebar -->
-    <nav>
-  <button onclick="toggleNav()">Toggle Nav</button>
+    <nav >
+        <div class="nav-btns d-flex flex-column gap-2 justify-content-between">
+                <button class="hamburger-menu" id="hamburger-menu" onclick="toggleNav()">
+                <div class="menu-bar1"></div>
+                <div class="menu-bar2"></div>
+                <div class="menu-bar3"></div>
+                </button>
+            <a href="#contact"> <button type="button" class="connect btn btn-outline-secondary">CONNECT</button></a>
+        </div>
+
   <ul class="nav-links">
-    <li><a href="#landing" onclick="toggleNav()">HOME</a></li>
-    <li><a href="#about" onclick="toggleNav()">ABOUT</a></li>
-    <li><a href="#resume" onclick="toggleNav()">RESUME</a></li>
-    <li><a href="#projects" onclick="toggleNav()">PROJECTS</a></li>
-    <li><a href="#contact" onclick="toggleNav()">CONTACT</a></li>
+    <li><a class="direct" href="#landing" onclick="toggleNav()">HOME</a></li>
+    <li><a class="direct" href="#about" onclick="toggleNav()">ABOUT</a></li>
+    <li><a class="direct" href="#resume" onclick="toggleNav()">RESUME</a></li>
+    <li><a class="direct" href="#projects" onclick="toggleNav()">PROJECTS</a></li>
+    <li><a class="direct" href="#contact" onclick="toggleNav()">CONTACT</a></li>
   </ul>
 </nav>
 
@@ -59,17 +67,18 @@
                  <img src="./images/Carlablack.jpg" class="img-fluid about-img" alt="intropic"> 
               </div>
               <div class="col-lg-6 text-center pt-2">
-                <p>I am Carla and I am on a path of becoming the best full stack developer. I thorougly enjoy web development as I can best express mycreativity</p>
-                <p>I have recently graduated with my BSc in Biotechnology and decided to dive into tech and I have not looked back ever since. When not behind a computer you can find me outdoors hiking and stand-up paddling or in the gym powerlifting.</p>
+                <p>I am an optimistic, driven, resilient and open-minded creative. I enjoy every encounter with others and meeting new people so I consider myself to be quite social. I always put others first. My mind is full of ideas which feed into my adventurous, creative and exploring nature.  I believe I can accomplish difficult things by tackling them piece by piece. I love that through web development I can use both my intellect and creativity to solve problems.
+                My interest and passion for web development stem from massive global websites and apps such as the Meta group and TikTok. It amazes me how social media platforms can have billions of users all day, everyday submitting data and how these companies continue to grow. I firmly believe that tech is the future. I graduated with a BSc in biotechnology, shortly after, I started researching free resources to learn how to code while looking for a job in Biotechnology. However, I found the Life Choices Academy internship advert and applied and now I have had exposure to programming languages and invaluable experiences. I am very grateful for the fast pace learning style and very fortunate to be able to network and learn from experienced developers. 
+                </p>
                 </div>
             </div>
             <div class="about-details row d-flex flex-wrap text-center pt-3">
-                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-telephone"></i><p>PHONE</p><p>0767194703</p></div>
-                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-envelope"></i><p>EMAIL</p><p style="word-break: break-all;">carlaamylawrence@gmail.com</p></div>
-                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-mortarboard-fill"></i><p>DEGREE</p><p>BSc</p></div>
-                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-geo-fill"></i><p>LOCATION</p><p>Cape Town</p></div>
-                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-building"></i><p>FREELANCE</p><p>Available</p></div>
-                <div class="col-lg-2 col-md-4 "><i class="about-icon bi bi-calendar-date"></i><p>AGE</p><p>23 Years old</p></div>
+                <div class="details col-lg-2 col-md-4 "><i class="about-icon bi bi-telephone"></i><p>PHONE</p><p>0767194703</p></div>
+                <div class="details col-lg-2 col-md-4 "><i class="about-icon bi bi-envelope"></i><p>EMAIL</p><p style="word-break: break-all;">carlaamylawrence@gmail.com</p></div>
+                <div class="details col-lg-2 col-md-4 "><i class="about-icon bi bi-mortarboard-fill"></i><p>DEGREE</p><p>BSc</p></div>
+                <div class="details col-lg-2 col-md-4 "><i class="about-icon bi bi-geo-fill"></i><p>LOCATION</p><p>Cape Town</p></div>
+                <div class="details col-lg-2 col-md-4 "><i class="about-icon bi bi-building"></i><p>FREELANCE</p><p>Available</p></div>
+                <div class="details col-lg-2 col-md-4 "><i class="about-icon bi bi-calendar-date"></i><p>AGE</p><p>23 Years old</p></div>
 
             </div>
         </div>
@@ -153,29 +162,24 @@
             <h4>DITCHED BACTERIA FOR BUGS</h4>
         </div>
       </div>
-        <div class="container">
-            <div class="row d-flex flex-wrap">
-                <div class="col-lg-6 offset-md-3">
-                    <div class="resume-item pb-0">
-                        <ul class="timeline">
-                            <li>
-                            <h4 class="resume-title">FULLSTACK DEVELOPER INTERN</h4>
-                            <h5>Life Choices Academy</h5>
-                            <p>March 2022-September 2022</p>
-                            <p>Learnt Front-end styling frameworks and minupulations</p>
-                            <p>Learnt Back-end programming languages</p>
-                            <p>Built projects</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6"></div>
-                <div class="col-lg-6"></div>
-                <div class="col-lg-6"></div>
-                <div class="col-lg-6 offset-md-3">
+        <div class="container-left">
+            <div class="resume-item pb-0">
+                <ul class="timeline">
+                    <li>
+                    <h4 class="resume-title">FULLSTACK DEVELOPER INTERN</h4>
+                    <h5>Life Choices Academy</h5>
+                    <p>March 2022-September 2022</p>
+                    <p>Learnt Front-end styling frameworks and minupulations</p>
+                    <p>Learnt Back-end programming languages</p>
+                    <p>Built projects</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-right">
             <div class="resume-item pb-0">
               <ul class="timeline">
-                <li>
+                 <li>
                   <h4 class="resume-title">BSc BIOTECHNOLOGY GRADUATE</h4>
                   <h5>The University of the Western Cape</h5>
                   <p>Feb 2017-November 2021</p>
@@ -184,29 +188,67 @@
                   <p>Plant, food and Industrical Biotechnology.</p>
                 </li>
               </ul>
-          </div>
+            </div>
+        </div>
+        <div class="container-left">
+            <div class="resume-item pb-0">
+                <ul class="timeline">
+                    <li>
+                    <h4 class="resume-title">CUSTOMER SERVICE AGENT</h4>
+                    <h5>Amazon</h5>
+                    <p>June 2020-October 2020</p>
+                    <p>Solved customer queries expeditiously </p>
+                    <p>Empathetic listener and persuasive speaker towards customers</p>
+                    <p>Commended by management for efficiency and professionalism </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="resume-item pb-0">
+              <ul class="timeline">
+                 <li>
+                  <h4 class="resume-title">RECEPTIONIST</h4>
+                  <h5>KHANYISA REAL SYSTEMS</h5>
+                  <p>June 2016-January 2020</p>
+                  <p>Managed a switchboard and mailing system</p>
+                    <p>Filing</p>
+                    <p>Stock control</p>
+                </li>
+              </ul>
+            </div>
+        </div>
                 <div class="col-lg-6"></div>
             </div>
+            
             <div class="row d-flex flex-wrap">
                 <div class="col-lg-8">
                     <div id="testimonial-indactors" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <p>Carla Amy Lawrence is an excellent web developer. She hones her craft and both her effort and professionalism can be seen in any projects she has worked on. Her impressive skills, work ethic,  creativity and unique approach makes him an asset. Having Carla on your team or in your company is definitely advantageous and I would highly recommend her.</p>
+                                <div class="test-person">
+                                    <img src="./images/Abu-bakr (2).JPG" class="testpic rounded-circle" style=width:100px; alt="zoepic"/>
+                                    <h5>First slide label</h5>
+                                </div>
                             </div>
                             <div class="carousel-item">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <p>"Carla is your go-to person when you're stuck with anything work related or in your personal life. Carla is a really awesome web developer. Her insight of both design and databases really makes her such valuable team player. She indeed is an asset to any company or project.I feel honored to have worked beside her on many projects. Anything she creates always shows her passion for programming."</p>
+                                <div class="test-person">
+                                    <img src="images/Ricardo (2).JPG" class="testpic rounded-circle" style=width:100px; alt="zoepic"/>
+                                    <h5>Second slide label</h5>
+                                </div>
                             </div>
                             <div class="carousel-item">
+                                <div class="test-person"></div>
+                                <p>Carla, busting with potential, great initiative and a great personality with a can do spirt. When responsibly comes her way she takes charge. Being elected as a team rep she has shown prowess in working in a team and communicating effectively to plan projects and events. A insider with a outside perspective, with those skills she would be a asset to any team and with her work ethic and drive she's assured for success.</p>
+                                <img src="./images/Emile.JPG" class="testpic rounded-circle" style=width:100px; alt="zoepic"/>
                                 <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
                             </div>
                             <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle active" style="width: 15px; height: 15px;" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle" style="width: 15px; height: 15px;" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle" style="width: 15px; height: 15px;" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle active" style="width: 10px; height: 10px;" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle" style="width: 10px; height: 10px;" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle" style="width: 10px; height: 10px;" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         </div>
 
@@ -215,8 +257,11 @@
                 <div class="col-lg-4">
                     <h3>TESTIMONIALS</h3>
                 </div>
+
             </div>
         </div>
+      </div>
+      
       </div>
     </section>
 
@@ -228,33 +273,39 @@
             <h4>PREVIOUS WORK THAT I AM PROUD OF</h4>
         </div>
       </div>
-      <div class="container">
+      <div class="projects-container">
           <div class="row d-flex flex-wrap">
-              <div class="col-lg-4">
-                  <div class="project-card">
+              <div class="col-lg-4 d-flex flex-column align-items-center">
+                  <div class="project-card ">
                       <img src="./images/resturantsnip.PNG" alt="resturantwebpage" class="img-fluid" style="width: 350px; height: 200px;">
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eaque beatae explicabo enim, facilis optio saepe ea.</p>
+                        <div class="project-info">
+                            <p>This resturant page was made with Bootstrap, HTML and CSS. The aim was to see how close we could get to a template design</p>
+                        </div>
                   </div>
                   <div class="button-links">
                       <a href="https://mytakeondelicious.netlify.app" target="_blank"><button type="button" class="btn btn-outline-dark">Live Webpage</button></a>
                       <a href="https://github.com/Carlaamylawrence/Resturant.git" target="_blank"><button type="button" class="btn btn-outline-dark">Github</button></a>
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 d-flex flex-column align-items-center">
                   <div class="project-card">
                       <img src="./images/gymsnap.PNG" class="img-fluid" alt="gymwebpage" style="width: 350px; height: 200px;">
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eaque beatae explicabo enim, facilis optio saepe ea.</p>
-                  </div>
+                        <div class="project-info">
+                            <p>This gym landing page was made with Bootstrap, HTML and CSS. This was a personal project to practice my skills.</p>
+                        </div>
+                    </div>
                   <div class="button-links">
                       <a href="https://hugegym.netlify.app" target="_blank"><button type="button" class="btn btn-outline-dark">Live Webpage</button></a>
                       <a href="https://github.com/Carlaamylawrence/gym.git" target="_blank"><button type="button" class="btn btn-outline-dark">Github</button></a>
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 d-flex flex-column align-items-center">
                   <div class="project-card">
                       <img src="./images/bakerysnip.PNG" alt="bakerypage" class="img-fluid" style="width: 350px; height: 200px;">
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eaque beatae explicabo enim, facilis optio saepe ea.</p>
-                  </div>
+                        <div class="project-info">
+                            <p>This grpoup project was created with HTML and CSS. I was responsible for the landing page</p>
+                        </div>
+                    </div>
                   <div class="button-links">
                       <a href="https://sweetheavenconfectionery.netlify.app/" target="_blank"><button type="button" class="btn btn-outline-dark">Live Webpage</button></a>
                       <a href="https://github.com/Carlaamylawrence/Company_portfolio.git" target="_blank"><button type="button" class="btn btn-outline-dark">Github</button></a>
@@ -348,9 +399,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script>
+    <script>  
         function toggleNav() {
         document.querySelector(".nav-links").classList.toggle("active");
+        document.getElementById("hamburger-menu").classList.toggle("active")
 }
     </script>
   </body>
