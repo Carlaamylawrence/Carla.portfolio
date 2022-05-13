@@ -5,8 +5,22 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 16px;
-  
 }
+html,
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.sidebtnnav {
+  padding-top: 80%;
+  padding-left: 34px;
+}
+
 .hamburger-menu {
   top: 0;
   z-index: 10;
@@ -29,7 +43,6 @@
 }
 
 .hamburger-menu.active .menu-bar1 {
-  /* transform: rotate(-45deg) translate(-7px, 8px); */
   transform: rotate(-45deg) translate(-0.7rem, 0.8rem);
 }
 
@@ -40,39 +53,38 @@
 
 /* ROTATE LAST BAR */
 .hamburger-menu.active .menu-bar3 {
-  /* transform: rotate(45deg) translate(-6px, -8px); */
   transform: rotate(45deg) translate(-0.6rem, -0.8rem);
 }
 
-div.landing.carousel-item{
+div.landing.carousel-item {
   height: 100vh;
-  width:100%;
+  width: 100%;
   background-color: #101314;
 }
-div.landing.carousel-item{
+div.landing.carousel-item {
   height: 100vh;
-  width:100%;
+  width: 100%;
 }
 .landing-section-title {
   bottom: 0;
   z-index: 30;
 }
 .img-gradient {
-  position:relative;
+  position: relative;
 }
 
 .img-gradient::after {
-  content: '';
+  content: "";
   position: absolute;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
-.carousel-control-next{
-  
+.carousel-control-next {
 }
-.carousel-control-prev{
-   
+.carousel-control-prev {
 }
 .pagebreak-container {
   background-color: rgb(45, 44, 44);
@@ -136,9 +148,9 @@ ul.a {
 }
 .direct {
   text-decoration: none;
-  color: white;
+  color: ;
   font-size: 30px;
-  font-size: 50px;
+  font-size: 20px;
   display: inline-block;
   font-weight: 800;
   padding: 35px;
@@ -176,6 +188,12 @@ section {
   font-size: 4vw;
   letter-spacing: 2px;
 }
+.about-img {
+  width: 300px;
+  height: 300px;
+  filter: drop-shadow(0px 10px 3px black);
+}
+
 .about-icon {
   font-size: 20px;
   text-shadow: #75dab4 2px 2px 3px;
@@ -183,13 +201,21 @@ section {
 .about-details {
   list-style: none;
 }
+
+.bio h4 {
+  color: #75dab4;
+  text-shadow: #232323 1px 1px 2px;
+}
+
 .details:hover {
   position: relative;
   top: -10px;
   transition: all 0.25s;
-  border-bottom: #232323 3px solid;
-  border-right: #232323 3px solid;
-  box-shadow: #93b6c8 2px 2px 2px;
+  box-shadow: #93b6c8 2px 2px 2px 2px;
+}
+
+.deets {
+  text-shadow: #232323 1px 1px 2px;
 }
 .skill {
   width: 80%;
@@ -276,15 +302,17 @@ section {
 
 /* testimonials */
 div.testimonial.carousel-inner {
-  width: 360px;
+  width: 6000px;
   height: 500px;
   margin-left: 30px;
 }
 div.testimonial.carousel-item {
   background-color: #75dab4;
-  width: 360px;
+  width: 600px;
   height: 500px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 div.testimonial.carousel-indicators {
@@ -292,34 +320,41 @@ div.testimonial.carousel-indicators {
   position: absolute;
   bottom: 0;
   list-style: none;
-  z-index: 2;
+  z-index: 300;
 }
 .testpic {
   bottom: 0;
 }
+div.test-person {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
 h4.resume-title {
   color: #161619;
 }
 /* resume */
-.section-heading{
+.section-heading {
   color: aliceblue;
   font-family: "Fjalla One", sans-serif;
   line-height: 1.4;
   font-size: 80px;
   letter-spacing: 2px;
 }
-.resume{
-  background-color: rgb(45, 44, 44)}
+.resume {
+  background-color: rgb(45, 44, 44);
+}
 
 .timeline-section:nth-of-type(even) {
   flex-direction: row-reverse;
   text-align: right;
 }
 .timeline-section:nth-of-type(odd) {
-    align-self: flex-end;
+  align-self: flex-end;
 }
-.timeline-section{
-  background-color:rgb(45, 44, 44);
+.timeline-section {
+  background-color: rgb(45, 44, 44);
   margin: 2.5%;
   box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
   display: flex;
@@ -331,7 +366,7 @@ h4.resume-title {
   text-align: center;
   font-weight: ;
   padding: 20px;
-  background-color: rgb(95, 190, 219);
+  background-color: #75dab4;
   text-shadow: 3px 3px 10px black;
   font-family: "Fjalla One", sans-serif;
 }
@@ -342,9 +377,12 @@ h4.resume-title {
   justify-content: center;
   color: aliceblue;
 }
-.timeline-title, .timeline-heading {
+.timeline-title,
+.timeline-heading {
   font-size: 1.4rem;
   margin-bottom: 20px;
+  color: #75dab4;
+  text-shadow: #232323 1px 1px 2px;
 }
 .timeline-role {
   font-size: 0.8rem;
@@ -356,24 +394,21 @@ h4.resume-title {
   list-style-type: none;
 }
 .timeline-content li {
-  border-bottom: 2px solid var(--blueGray2);
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
 
-
 .things-container {
-  background-color: white;
+  background-color: #303030;
 }
 .card-container {
-  perspective: 900px;
-  margin-right: 20px;
+  margin: 20px;
 }
 
 .card {
   position: relative;
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
   transition: all 0.6s ease;
   transform-style: preserve-3d;
 }
@@ -383,8 +418,8 @@ h4.resume-title {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
   border-radius: 5px;
   color: rgb(39, 39, 39);
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
@@ -414,9 +449,8 @@ h4.resume-title {
   color: aliceblue;
 }
 
-ul{
+ul {
   list-style: none;
-
 }
 
 .card-container:hover .card {
@@ -431,6 +465,7 @@ ul{
 /* projects */
 .projects-container {
   padding: 20px;
+  background-color: #303030;
 }
 
 .project-card {
