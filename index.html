@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CarlaCodes</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto+Slab&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e67a0b83aa.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -22,15 +24,24 @@
 
   <body bg-dark>
     <!-- sidebar -->
-    <nav >
-        <div class="nav-btns d-flex flex-column gap-2 justify-content-between">
-                <button class="hamburger-menu" id="hamburger-menu" onclick="toggleNav()">
-                <div class="menu-bar1"></div>
-                <div class="menu-bar2"></div>
-                <div class="menu-bar3"></div>
-                </button>
-            <a href="#contact"> <button type="button" class="connect btn btn-outline-secondary">CONNECT</button></a>
+    <nav  >
+        <div class="container-fluid d-flex flex-column gap-2">
+        <div class="nav-btns ">
+                <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" class="img-fluid"  width="300px" height="400px" alt="">
+                </a>
+                </div>
+                <div class="sidebtnnav">
+                    <button class="hamburger-menu" id="hamburger-menu" onclick="toggleNav()">
+                    <div class="menu-bar1"></div>
+                    <div class="menu-bar2"></div>
+                    <div class="menu-bar3"></div>
+                    </button>
+                </div>
+                
         </div>
+    </div>
 
   <ul class="nav-links">
     <li><a class="direct" href="#landing" onclick="toggleNav()">HOME</a></li>
@@ -45,13 +56,83 @@
     <!-- landing -->
     <main id="main">
     <section id="landing" class="landing">
-      <div class="container-fluid  text-white" style="height: 100vh;">
-        <div class="landing-section-title d-flex flex-column flex-end">
-            <h1>CARLA AMY LAWRENCE</h1>
-            <h3>NEED A WEB DEVELOPER?</h3>
-        </div>
+      <div class="container-fluid bg-dark text-white" style="height: 100vh;">
+        <div id="landing-indicators" class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#landing-indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#landing-indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#landing-indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#landing-indicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="landing carousel-inner" >
+              <div class=" landing carousel-item active">
+                  <div class="img-gradient">
+                        <img src="./images/landingpic.jpg" class="img-fluid d-block w-100" alt="...">
+                    </div>
+                <div class="landing-section-title d-flex flex-column flex-end">
+                    <div class="carousel-caption">
+                        <h1>CARLA AMY LAWRENCE</h1>
+                        <h3>NEED A WEB DEVELOPER?</h3>
+                    </div>
+                </div>
+              </div>
+              <div class="landing carousel-item">
+                  <div class="img-gradient">
+                        <img src="./images/land2.jpg" class="img-fluid d-block w-100" alt="...">
+                    </div>
+                <div class="landing-section-title d-flex flex-column flex-end">
+                    <div class="carousel-caption">
+                        <h1>CARLA AMY LAWRENCE</h1>
+                        <h3>NEED A WEB DEVELOPER?</h3>
+                    </div>
+                </div>
+              </div>
+              <div class="landing carousel-item">
+                  <div class="img-gradient">
+                        <img src="./images/land4.jpg" class="img-fluid" alt="...">
+                    </div>
+                <div class="landing-section-title d-flex flex-column flex-end">
+                    <div class="carousel-caption">
+                        <h1>CARLA AMY LAWRENCE</h1>
+                        <h3>NEED A WEB DEVELOPER?</h3>
+                    </div>
+                </div>
+              </div>
+                <div class="landing carousel-item">
+                    <div class="img-gradient">
+                        <img src="./images/land3.jpg" class="img-fluid d-block w-100" alt="...">
+                    </div>
+                    <div class="landing-section-title d-flex flex-column flex-end">
+                        <div class="carousel-caption">
+                            <h1>CARLA AMY LAWRENCE</h1>
+                            <h3>NEED A WEB DEVELOPER?</h3>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#landing-indicators" data-bs-slide="prev">
+              
+              <span >PREV</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#landing-indicators" data-bs-slide="next">
+              <span>NEXT</span>
+            </button>
+          </div>
+        
       </div>
     </section>
+<!-- modal is hidden -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">LET'S BE FIRIENDS</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>         
+        </div>
+      </div>
 
     <!-- about -->
     <section id="about" class="">
@@ -81,6 +162,7 @@
                 <div class="details col-lg-2 col-md-4 "><i class="about-icon bi bi-calendar-date"></i><p>AGE</p><p>23 Years old</p></div>
 
             </div>
+            
         </div>
         <div class="skills-container">
             <div class="skill">
@@ -156,106 +238,112 @@
     </section>
     <!-- resume -->
     <section id="resume" class="resume">
-      <div class="pagebreak-container container-fluid" >
-        <div class="section-title">
-            <h1>RESUME</h1>
-            <h4>DITCHED BACTERIA FOR BUGS</h4>
-        </div>
-      </div>
-        <div class="container-left">
-            <div class="resume-item pb-0">
-                <ul class="timeline">
-                    <li>
-                    <h4 class="resume-title">FULLSTACK DEVELOPER INTERN</h4>
-                    <h5>Life Choices Academy</h5>
-                    <p>March 2022-September 2022</p>
-                    <p>Learnt Front-end styling frameworks and minupulations</p>
-                    <p>Learnt Back-end programming languages</p>
-                    <p>Built projects</p>
-                    </li>
-                </ul>
+        <div class="pagebreak-container">
+            <div class="section-title">
+                <h1>RESUME</h1>
+                <h4>DITCHED BACTERIA FOR BUGS</h4>
             </div>
         </div>
-        <div class="container-right">
-            <div class="resume-item pb-0">
-              <ul class="timeline">
-                 <li>
-                  <h4 class="resume-title">BSc BIOTECHNOLOGY GRADUATE</h4>
-                  <h5>The University of the Western Cape</h5>
-                  <p>Feb 2017-November 2021</p>
-                  <p>Biochemistry, Microbiology and Bioinformatics</p>
-                  <p>Mathematics and Statistics</p>
-                  <p>Plant, food and Industrical Biotechnology.</p>
-                </li>
-              </ul>
+        <div class="timeline d-flex flex-column" id="timeline">
+            <div class="timeline-section timeline-right aos init aos-animate" data-aos="zoom-in-right" >
+                <p class="timeline-header">MARCH 2022 -CURRENT</p>
+                <div class="timeline-content">
+                    <h4 class="timeline-title">Life Choices Academy</h4><span class="timeline-role">Fullstack web developer intern</span></h4>
+                    <p class="timeline-description">An NPO that aims to rectify inequality to disadvantaged youth</p>
+                    <h6 class="timeline-heading">What I learnt:</h6>
+                    <ul> 
+                        <li>Learnt Front-end styling frameworks and manipulations</li>
+                        <li>Styling with CSS and Bootsrap</li>
+                        <li>Coding webpages using HTML</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="timeline-section timeline-left aos init aos-animate" data-aos="zoom-in-left" >
+                <p class="timeline-header">Feb 2017-November 2021</p>
+                <div class="timeline-content">
+                    <h4 class="timeline-title">The University of the Western Cape</h4><span class="timeline-role">BSc BIOTECHNOLOGY GRADUATE</span></h4>
+                    <p class="timeline-description">Both theory and practical based learning about the wonderful world at a microscpic level.</p>
+                    <h6 class="timeline-heading">What I learnt:</h6>
+                    <ul> 
+                        <li>Biochemistry, Microbiology and Bioinformatics</li>
+                        <li>athematics and Statistics</li>
+                        <li>Plant, food and Industrical Biotechnology</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="timeline-section timeline-right aos init aos-animate" data-aos="zoom-in-right" >
+                <p class="timeline-header">JUNE 2020 - OCTOBER 2020</p>
+                <div class="timeline-content">
+                    <h4 class="timeline-title">Amazon</h4><span class="timeline-role">CUSTOMER SERVICE AGENT</span></h4>
+                    <p class="timeline-description">An NPO that aims to rectify inequality to disadvantaged youth</p>
+                    <h6 class="timeline-heading">What I learnt:</h6>
+                    <ul> 
+                        <li>Solved customer queries expeditiously</li>
+                        <li>Empathetic listener and persuasive speaker towards customers</li>
+                        <li>Commended by management for efficiency and professionalism </li>
+                      </ul>
+                </div>
+            </div>
+            <div class="timeline-section timeline-left aos init aos-animate" data-aos="zoom-in-left" >
+                <p class="timeline-header">JUNE 2016-JANUARY 2020</p>
+                <div class="timeline-content">
+                    <h4 class="timeline-title">The University of the Western Cape</h4><span class="timeline-role">TEMP RECEPTIONIST</span></h4>
+                    <p class="timeline-description"> A software developer house based in Rondebosch where I worked in a relief role when needed. </p>
+                    <h6 class="timeline-heading">What I learnt:</h6>
+                    <ul> 
+                        <li>Managed a switchboard and mailing system</li>
+                        <li>Filing of invoices</li>
+                        <li>Stock control and product logistics</li>
+                      </ul>
+                </div>
             </div>
         </div>
-        <div class="container-left">
-            <div class="resume-item pb-0">
-                <ul class="timeline">
-                    <li>
-                    <h4 class="resume-title">CUSTOMER SERVICE AGENT</h4>
-                    <h5>Amazon</h5>
-                    <p>June 2020-October 2020</p>
-                    <p>Solved customer queries expeditiously </p>
-                    <p>Empathetic listener and persuasive speaker towards customers</p>
-                    <p>Commended by management for efficiency and professionalism </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container-right">
-            <div class="resume-item pb-0">
-              <ul class="timeline">
-                 <li>
-                  <h4 class="resume-title">RECEPTIONIST</h4>
-                  <h5>KHANYISA REAL SYSTEMS</h5>
-                  <p>June 2016-January 2020</p>
-                  <p>Managed a switchboard and mailing system</p>
-                    <p>Filing</p>
-                    <p>Stock control</p>
-                </li>
-              </ul>
-            </div>
-        </div>
-                <div class="col-lg-6"></div>
-            </div>
+      
             
             <div class="row d-flex flex-wrap">
                 <div class="col-lg-8">
                     <div id="testimonial-indactors" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
+                        <div class="testimonial carousel-inner">
+                            <div class="testimonial carousel-item active">
+                                <p>In the short time that I have known Carla, she has continuously surprised and impressed me. Carla is a natural born leader and has quickly become someone that her peers look up to. Carla is also very dedicated, both to her colleagues as well as her studies.  Carla has proven to be an absolute powerhouse of talent and I cannot wait to see the heights to which she soars!</p>
+                                <div class="test-person">
+                                    <img src="./images/2021-team-jason-wandrag.jpg" class="testpic rounded-circle" style=width:100px; alt="zoepic"/>
+                                    <h5>First slide label</h5>
+                                </div>
+                            </div>
+                            <div class="testimonial carousel-item">
+                                <div class="test-person"></div>
+                                <p>Carla, busting with potential, great initiative and a great personality with a can do spirt. When responsibly comes her way she takes charge. Being elected as a team rep she has shown prowess in working in a team and communicating effectively to plan projects and events. A insider with a outside perspective, with those skills she would be a asset to any team and with her work ethic and drive she's assured for success.</p>
+                                <img src="./images/Emile.JPG" class="testpic rounded-circle" style=width:100px; alt="zoepic"/>
+                                <h5>Third slide label</h5>
+                            </div>
+                            <div class="testimonial carousel-item">
                                 <p>Carla Amy Lawrence is an excellent web developer. She hones her craft and both her effort and professionalism can be seen in any projects she has worked on. Her impressive skills, work ethic,  creativity and unique approach makes him an asset. Having Carla on your team or in your company is definitely advantageous and I would highly recommend her.</p>
                                 <div class="test-person">
                                     <img src="./images/Abu-bakr (2).JPG" class="testpic rounded-circle" style=width:100px; alt="zoepic"/>
                                     <h5>First slide label</h5>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="testimonial carousel-item">
                                 <p>"Carla is your go-to person when you're stuck with anything work related or in your personal life. Carla is a really awesome web developer. Her insight of both design and databases really makes her such valuable team player. She indeed is an asset to any company or project.I feel honored to have worked beside her on many projects. Anything she creates always shows her passion for programming."</p>
                                 <div class="test-person">
                                     <img src="images/Ricardo (2).JPG" class="testpic rounded-circle" style=width:100px; alt="zoepic"/>
                                     <h5>Second slide label</h5>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="test-person"></div>
-                                <p>Carla, busting with potential, great initiative and a great personality with a can do spirt. When responsibly comes her way she takes charge. Being elected as a team rep she has shown prowess in working in a team and communicating effectively to plan projects and events. A insider with a outside perspective, with those skills she would be a asset to any team and with her work ethic and drive she's assured for success.</p>
-                                <img src="./images/Emile.JPG" class="testpic rounded-circle" style=width:100px; alt="zoepic"/>
-                                <h5>Third slide label</h5>
-                            </div>
-                            <div class="carousel-indicators">
+                            
+                            <div class="testimonial carousel-indicators">
                             <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle active" style="width: 10px; height: 10px;" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle" style="width: 10px; height: 10px;" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle" style="width: 10px; height: 10px;" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#testimonial-indactors" class="rounded-circle" style="width: 10px; height: 10px;" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <h3>TESTIMONIALS</h3>
+                <div class="section-heading col-lg-4">
+                    <h3>TESTIMONIALS<h3>
                 </div>
 
             </div>
@@ -399,6 +487,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    
+    <script>
+        AOS.init();
+      </script>
     <script>  
         function toggleNav() {
         document.querySelector(".nav-links").classList.toggle("active");
