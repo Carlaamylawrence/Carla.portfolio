@@ -11,6 +11,93 @@ body {
   overflow-x: hidden;
 }
 
+h2 {
+  color:#75dab4;
+  font-family: "Fjalla One", sans-serif;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 10vh;
+  letter-spacing: -3px;
+  text-shadow: #232323 0px 2px 8px;
+}
+
+
+main {
+  margin-left: 14%;
+}
+ul.nav-links.active {
+  list-style: none;
+  background-color: #232323;
+}
+ul.a {
+  text-decoration: none;
+}
+.nav-links {
+  position: fixed;
+  top: -100%;
+  left: 14%;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  transition: top 0.3s linear;
+}
+.direct {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-weight: 800;
+  padding: 20px;
+}
+a.direct{
+  font-size: 6vh ;
+}
+
+.direct:hover {
+  color: #75dab4;
+}
+
+.nav-links.active {
+  top: 0;
+}
+
+#main {
+  margin-left: 12%;
+}
+
+small {
+  color: gray;
+}
+
+section {
+  min-height: 40vh;
+}
+.section-title {
+  bottom: 0;
+  padding-bottom: 45px;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 14%;
+  background: #303030;
+  color: white;
+  z-index: 100;
+}
 .wrapper {
   padding-top: 50%;
 }
@@ -98,7 +185,7 @@ body {
 
 .sidebtnnav {
   padding-top: 80%;
-  padding-left: 15%;
+  padding-left: 10%;
 }
 
 .hamburger-menu {
@@ -109,13 +196,13 @@ body {
   background-color: #303030;
   border-color: #303030;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  padding-left: ;
+ 
 }
 
 .menu-bar1,
 .menu-bar2,
 .menu-bar3 {
-  width: 30px;
+  width: 4vh;
   height: 0.2rem;
   background-color: rgb(12, 12, 12);
   margin: 0.8rem 0.8rem;
@@ -127,12 +214,10 @@ body {
   transform: rotate(-45deg) translate(-0.7rem, 0.8rem);
 }
 
-/* FADE OUT SECOND BAR */
 .hamburger-menu.active .menu-bar2 {
   opacity: 0;
 }
 
-/* ROTATE LAST BAR */
 .hamburger-menu.active .menu-bar3 {
   transform: rotate(45deg) translate(-0.6rem, -0.8rem);
 }
@@ -183,97 +268,14 @@ div.landing.carousel-item {
   padding-left: 40px;
 }
 
-h1 {
-  color: #fff;
-  font-weight: 800;
-  font-size: 15vh;
-  letter-spacing: -3px;
-  text-shadow: #232323 0px 2px 8px;
-}
-h2 {
-  color: antiquewhite;
-  font-family: "Fjalla One", sans-serif;
-}
-h4 {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: -0.5px;
-}
-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 12%;
-  background: #303030;
-  color: white;
-  z-index: 100;
-}
 
-main {
-  margin-left: 12%;
-}
-ul.nav-links.active {
-  list-style: none;
-  background-color: #232323;
-}
-ul.a {
-  text-decoration: none;
-}
-.nav-links {
-  position: fixed;
-  top: -100%;
-  left: 12%;
-  right: 0;
-  height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  transition: top 0.3s linear;
-}
-.direct {
-  text-decoration: none;
-  color: white;
-  font-size: px;
-  font-size: 20px;
-  display: inline-block;
-  font-weight: 800;
-  padding: 35px;
-}
-
-.direct:hover {
-  color: #75dab4;
-}
-
-.nav-links.active {
-  top: 0;
-}
-
-#main {
-  margin-left: 12%;
-}
-
-small {
-  color: gray;
-}
-
-section {
-  min-height: 40vh;
-}
-.section-title {
-  bottom: 0;
-  padding-bottom: 45px;
-}
 
 /* ABOUT */
 .about h3 {
   font-family: "Fjalla One", sans-serif;
   margin-bottom: 80px;
   line-height: 1.4;
-  font-size: 4vw;
+  font-size: 8vw;
   letter-spacing: 2px;
 }
 .about-img {
@@ -437,16 +439,18 @@ h4.resume-title {
 .timeline-section:nth-of-type(even) {
   flex-direction: row-reverse;
   text-align: right;
+  
+  
 }
 .timeline-section:nth-of-type(odd) {
   align-self: flex-end;
 }
 .timeline-section {
   background-color: rgb(45, 44, 44);
-  margin: 2.5%;
+  margin: 10%;
   box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
   display: flex;
-  width: 60%;
+  width: 50%;
 }
 .timeline-header {
   writing-mode: vertical-lr;
@@ -473,7 +477,9 @@ h4.resume-title {
   text-shadow: #232323 1px 1px 2px;
 }
 .timeline-role {
-  font-size: 0.8rem;
+  font-size: 3vh;
+  text-shadow: #232323  1px 1px 2px;
+  color: #78a19f;
 }
 .timeline-description {
   margin-bottom: 20px;
@@ -497,6 +503,7 @@ h4.resume-title {
   position: relative;
   width: 250px;
   height: 350px;
+  border-radius: 5px;
   transition: all 0.6s ease;
   transform-style: preserve-3d;
 }
@@ -506,8 +513,8 @@ h4.resume-title {
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
-  height: 350px;
+  width: 251px;
+  height: 351px;
   border-radius: 5px;
   color: rgb(39, 39, 39);
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
@@ -525,8 +532,10 @@ h4.resume-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
   font-size: 30px;
+  background: linear-gradient(130deg, #94a8b9, #162f3a 100%);
+  
 }
 
 .back {
@@ -539,11 +548,16 @@ h4.resume-title {
 
 ul {
   list-style: none;
+  
+}
+
+.back li{
+  padding:10% ;
 }
 
 .card-container:hover .card {
   transform: rotateY(180deg);
-  background: #161619;
+  background:#232323
 }
 
 .back {
@@ -583,4 +597,11 @@ ul {
 
 .project-card:hover .project-info {
   opacity: 1;
+}
+
+/* MEDIA QUIERIES */
+@media (min-width: 576px) {  
+  .selector {
+  	background-color:#f00;
+  }
 }
