@@ -4,8 +4,10 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-size: 18px;
+  
 }
+p{ 
+  font-size: 1.5vw}
 html,
 body {
   overflow-x: hidden;
@@ -27,7 +29,7 @@ h4 {
 h1 {
   color: #fff;
   font-weight: 800;
-  font-size: 10vh;
+  font-size: 8vh;
   letter-spacing: -3px;
   text-shadow: #232323 0px 2px 8px;
 }
@@ -45,6 +47,11 @@ main {
 ul.nav-links.active {
   list-style: none;
   background-color: #232323;
+}
+
+.blue:hover{
+  background-color: #75dab4;
+  border: #75dab4 2px solid;
 }
 
 ul.a {
@@ -265,10 +272,7 @@ div.landing.carousel-item {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
-.carousel-control-next {
-}
-.carousel-control-prev {
-}
+
 .pagebreak-container {
   background-color: rgb(45, 44, 44);
   display: flex;
@@ -464,8 +468,7 @@ h4.resume-title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-align: center;
-  font-weight: ;
-  padding: 20px;
+  padding: 9px;
   background-color: #75dab4;
   text-shadow: 3px 3px 10px black;
   font-family: "Fjalla One", sans-serif;
@@ -498,6 +501,7 @@ h4.resume-title {
 .timeline-content li {
   margin-bottom: 10px;
   padding-bottom: 10px;
+  font-size: 3vh;
 }
 
 .things-container {
@@ -510,7 +514,7 @@ h4.resume-title {
 .card {
   position: relative;
   width: 250px;
-  height: 350px;
+  height: 240px;
   border-radius: 5px;
   transition: all 0.6s ease;
   transform-style: preserve-3d;
@@ -522,7 +526,7 @@ h4.resume-title {
   top: 0;
   left: 0;
   width: 251px;
-  height: 351px;
+  height:240px;
   border-radius: 5px;
   color: rgb(39, 39, 39);
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
@@ -530,11 +534,14 @@ h4.resume-title {
   backface-visibility: hidden;
 }
 .things {
-  color: #93b6c8;
+  color: #80a0b0;
   font-size: 30px;
+  
 }
 .front h4 {
-  color: #75dab4;
+  color:#232323;
+  padding: 20px;
+  text-shadow: #303030 1px 1px 2px;
   
 }
 .front {
@@ -544,7 +551,7 @@ h4.resume-title {
   justify-content:center;
   font-size: 30px;
   text-shadow: #303030 1px 1px 1px 2px;
-  background: linear-gradient(130deg, #94a8b9, rgb(117 218 180 / 0%) 100%);
+  background: linear-gradient(351deg, #75dab4, rgb(58 255 181 / 0%) 100%);
   
 }
 
@@ -561,7 +568,7 @@ ul {
 }
 
 .back li{
-  padding:10% ;
+  padding:5% ;
 }
 
 .card-container:hover .card {
@@ -617,9 +624,33 @@ ul {
   opacity: 1;
 }
 
+.contact{
+ 
+}
+
 /* MEDIA QUIERIES */
-@media (min-width: 576px) {  
-  .selector {
-  	background-color:#f00;
+@media (max-width: 480px) { 
+  .menu-bar1, .menu-bar2, .menu-bar3 {
+    width: 2vh;
   }
+  .timeline-content li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 2vh;
+  }
+}
+
+@media (max-width: 400px) {  
+  h1 {
+  	font-size: 6vh ;
+  }
+  h2{
+    font-size:5vh;
+  }
+  h3{
+    font-size: 4vh;
+  }
+  .menu-bar1, .menu-bar2, .menu-bar3 {
+    width: 2vh;
+}
 }
